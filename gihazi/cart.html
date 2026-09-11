@@ -1,0 +1,39 @@
+﻿﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>سلة المشتريات | جهازي </title>
+  <meta name="description" content="راجع أجهزتك المختارة في سلة المشتريات، واستفد من التوصيل والتركيب المعتمد داخل محافظة السويس مع خيارات دفع متعددة." />
+  <link href="/src/style.css" rel="stylesheet" />
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-blue-600 selection:text-white pt-16 sm:pt-20">
+
+  <!-- Shared Navbar (injected by navbar.js) -->
+  <div id="site-navbar"></div>
+
+  <!-- Cart Page Main Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <nav class="flex items-center gap-2 text-xs text-slate-500 mb-4" aria-label="مسار التنقل">
+      <a href="/" class="hover:text-blue-600">الرئيسية</a>
+      <span>/</span>
+      <span class="text-slate-800 font-semibold">سلة المشتريات</span>
+    </nav>
+
+    <div class="mb-6">
+      <h1 class="text-2xl sm:text-3xl font-black text-slate-900">سلة المشتريات وإنهاء الطلب</h1>
+      <p class="text-xs text-slate-500 mt-1">راجع أجهزتك المختارة وأدخل بياناتك لترتيب موعد التوصيل والتركيب في السويس</p>
+    </div>
+
+    <div id="cart-page-container">
+      <!-- Populated dynamically by cart.js -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div id="site-footer"></div>
+
+  <script src="/src/js/main.js" type="module"></script>
+</body>
+</html>

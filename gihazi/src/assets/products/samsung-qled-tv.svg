@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="qledScreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c1d95"/>
+      <stop offset="35%" stop-color="#2563eb"/>
+      <stop offset="70%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="200" cy="200" r="160" fill="#f8fafc"/>
+
+  <!-- TV Screen Outer Bezel (Ultra Thin) -->
+  <rect x="50" y="90" width="300" height="180" rx="6" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Screen Display (Vibrant 4K QLED Visual) -->
+  <rect x="54" y="94" width="292" height="172" rx="4" fill="url(#qledScreen)"/>
+  
+  <!-- Ambient screen landscape graphic -->
+  <path d="M54 220 Q120 160 200 210 T346 190 L346 266 L54 266 Z" fill="#0f172a" fill-opacity="0.5"/>
+  <circle cx="240" cy="140" r="22" fill="#fef08a" fill-opacity="0.8"/>
+
+  <!-- Quantum HDR & 4K 120Hz Badge on Screen -->
+  <rect x="65" y="105" width="75" height="20" rx="3" fill="#000000" fill-opacity="0.6"/>
+  <text x="102" y="119" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="bold" font-size="10" fill="#ffffff">QLED 4K 120Hz</text>
+
+  <!-- Samsung Logo at Bottom Bezel -->
+  <text x="200" y="278" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="900" font-size="7" fill="#cbd5e1" letter-spacing="1">SAMSUNG</text>
+
+  <!-- Sleek Central Pedestal Stand -->
+  <polygon points="185,272 215,272 210,310 190,310" fill="#334155"/>
+  <rect x="150" y="308" width="100" height="8" rx="3" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+</svg>
