@@ -18,10 +18,8 @@ export default defineConfig({
                 compare: resolve(rootDir, 'compare.html'),
                 cart: resolve(rootDir, 'cart.html'),
                 wishlist: resolve(rootDir, 'wishlist.html'),
-                about: resolve(rootDir, 'about.html'),
                 contact: resolve(rootDir, 'contact.html'),
                 branches: resolve(rootDir, 'branches.html'),
-                warranty: resolve(rootDir, 'warranty.html'),
             }
         }
     }
