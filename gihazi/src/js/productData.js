@@ -17,10 +17,10 @@ export const products = [
     categoryName: 'الثلاجات',
     price: 36900,
     oldPrice: 40500,
-    image: '/src/assets/products/beko-refrigerator.png',
+    image: '/products/beko-refrigerator.png',
     images: [
-      '/src/assets/products/beko-refrigerator.png',
-      '/src/assets/products/beko-refrigerator.png'
+      '/products/beko-refrigerator.png',
+      '/products/beko-refrigerator.png'
     ],
     shortDescription: 'تقنية NeoFrost بنظامي تبريد منفصلين مع إضاءة HarvestFresh للحفاظ على الفيتامينات.',
     description: 'ثلاجة بيكو كومبي توفر أقصى كفاءة تبريد بفضل نظام التبريد المزدوج NeoFrost، حيث تحافظ على الرطوبة المثالية في الثلاجة وتمنع انتقال الروائح بين الفريزر والثلاجة. مزودة بتكنولوجيا HarvestFresh الثورية التي تحاكي دورة ضوء الشمس الطبيعية للحفاظ على الفيتامينات في الخضراوات والفاكهة لفترة أطول.',
@@ -58,10 +58,10 @@ export const products = [
     categoryName: 'الثلاجات',
     price: 88500,
     oldPrice: 95000,
-    image: '/src/assets/products/samsung-bespoke-refrigerator.avif',
+    image: '/products/samsung-bespoke-refrigerator.avif',
     images: [
-      '/src/assets/products/samsung-bespoke-refrigerator.avif',
-      '/src/assets/products/bespoke-part.avif'
+      '/products/samsung-bespoke-refrigerator.avif',
+      '/products/bespoke-part.avif'
     ],
     shortDescription: 'تصميم Bespoke العصري مع مركز المشروبات Beverage Center وتقنية التبريد الثلاثي Triple Cooling.',
     description: 'تألق بأعلى درجات الرفاهية مع ثلاجة سامسونج بيسبوك 4 أبواب. تتميز بمساحة داخلية هائلة SpaceMax مع موزع مياه داخلي AutoFill Pitcher ونظام تبريد ذكي مدعوم بالذكاء الاصطناعي SmartThings AI Energy لتوفير حتى 15% من الكهرباء.',
@@ -97,9 +97,9 @@ export const products = [
     categoryName: 'الغسالات',
     price: 24500,
     oldPrice: 27000,
-    image: '/src/assets/products/beko-washing-machine.png',
+    image: '/products/beko-washing-machine.png',
     images: [
-      '/src/assets/products/beko-washing-machine.png'
+      '/products/beko-washing-machine.png'
     ],
     shortDescription: 'تقنية SteamCure بالبخار لإزالة التجاعيد بنسبة 50% وتعقيم 99.9% مع موتور إنفرتر.',
     description: 'غسالة ملابس بيكو سعة 9 كجم توفر عناية فائقة بالملابس من خلال قوة البخار الطبيعي SteamCure. يزيل البخار البقع الصعبة قبل الغسيل، ويمنع تجاعيد الأقمشة بعد الانتهاء، لتسهيل الكي وتوفير الوقت.',
@@ -135,11 +135,11 @@ export const products = [
     categoryName: 'الغسالات',
     price: 28900,
     oldPrice: 32000,
-    image: '/src/assets/products/samsung-ecobubble-washer.avif',
+    image: '/products/samsung-ecobubble-washer.avif',
     images: [
-      '/src/assets/products/samsung-ecobubble-washer.avif',
-      '/src/assets/products/sumsung-ecobubble-open.avif',
-      '/src/assets/products/samsung-ecobubble-side.avif'
+      '/products/samsung-ecobubble-washer.avif',
+      '/products/sumsung-ecobubble-open.avif',
+      '/products/samsung-ecobubble-side.avif'
     ],
     shortDescription: 'تقنية EcoBubble لتنظيف عميق بالماء البارد مع لوحة تحكم ذكية بالذكاء الاصطناعي AI Control.',
     description: 'تجمع غسالة سامسونج بين الذكاء الاصطناعي وتقنية إيكو بابل التي تحول المسحوق إلى فقاعات نشطة تخترق الأنسجة بسرعة لتنظيف أقوى بنسبة 24% في درجات حرارة منخفضة، مما يوفر الطاقة ويحمي ألوان ملابسك المفضلة.',
@@ -174,9 +174,9 @@ export const products = [
     categoryName: 'المطبخ',
     price: 26200,
     oldPrice: 28500,
-    image: '/src/assets/products/beko-dishwasher.png',
+    image: '/products/beko-dishwasher.png',
     images: [
-      '/src/assets/products/beko-dishwasher.png'
+      '/products/beko-dishwasher.png'
     ],
     shortDescription: 'ذراع رش CornerIntense ثلاثي الحركة للوصول لأدق زوايا الأواني مع تجفيف ذاتي SelfDry.',
     description: 'غسالة أطباق بيكو المتطورة مصممة لتتسع لـ 15 فرد براحة تامة. تضمن تقنية CornerIntense تغطية رش مثالية في كل ركن من أركان الغسالة، مع فتح الباب تلقائياً بعد انتهاء البرنامج SelfDry لضمان تجفيف مثالي ولمعان فائق.',
@@ -212,9 +212,9 @@ export const products = [
     categoryName: 'المطبخ',
     price: 24200,
     oldPrice: 26800,
-    image: '/src/assets/products/beko-built-in-oven.png',
+    image: '/products/beko-built-in-oven.png',
     images: [
-      '/src/assets/products/beko-built-in-oven.png'
+      '/products/beko-built-in-oven.png'
     ],
     shortDescription: 'سعة عملاقة 90 سم مع مروحة توزيع حراري وشواية دوارة وأمان كامل إيطالي.',
     description: 'فرن بلت إن بيكو مقاس 90 سم هو الاختيار المثالي لعشاق الطهي والولائم العائلية. مزود بمروحة تبريد وتوزيع للحرارة لضمان تسوية متجانسة لجميع المأكولات، مع زجاج عازل ثلاثي للحماية وأمان كامل يقطع الغاز تلقائياً في حال انطفاء الشعلة.',
@@ -249,9 +249,9 @@ export const products = [
     categoryName: 'الشاشات',
     price: 43500,
     oldPrice: 48000,
-    image: '/src/assets/products/samsung-qled-tv.avif',
+    image: '/products/samsung-qled-tv.avif',
     images: [
-      '/src/assets/products/samsung-qled-tv.avif'
+      '/products/samsung-qled-tv.avif'
     ],
     shortDescription: 'دقة 4K بمعدل تحديث 120Hz مع تقنية كوانتوم دوت بنسبة ألوان 100% ومعالج Quantum 4K.',
     description: 'استمتع بتجربة بصرية سينمائية مذهلة مع تلفزيون سامسونج QLED مقاس 65 بوصة. بفضل معالج Quantum Processor 4K فائق الذكاء، يتم رفع جودة أي محتوى إلى دقة 4K بوضوح مذهل وتباين فائق، بالإضافة إلى تقنية Motion Xcelerator Turbo+ للألعاب بدون أي تقطيع بدقة 4K 120Hz.',
@@ -287,9 +287,9 @@ export const products = [
     categoryName: 'موبايلات وتابلت',
     price: 66500,
     oldPrice: 66500,
-    image: '/src/assets/products/samsung-galaxy-s25.webp',
+    image: '/products/samsung-galaxy-s25.webp',
     images: [
-      '/src/assets/products/samsung-galaxy-s25.webp'
+      '/products/samsung-galaxy-s25.webp'
     ],
     shortDescription: 'إطار تيتانيوم صلب، معالج Snapdragon 8 Elite، كاميرا 200 ميجابكسل مع Galaxy AI المتطور.',
     description: 'هاتف القمة من سامسونج جالاكسي S25 ألترا. يقدم تجربة استثنائية مع ذكاء اصطناعي ثوري Galaxy AI يساعدك في الترجمة الفورية والبحث بمجرد رسم دائرة وتحرير الصور باحترافية، مدعوماً بقلم S-Pen مدمج وشاشة مسطحة Dynamic AMOLED 2X فائقة السطوع.',
@@ -324,9 +324,10 @@ export const products = [
     categoryName: 'الشاشات',
     price: 12000,
     oldPrice: 13500,
-    image: '/src/assets/products/tornado-smart-tv.svg',
+    image: '/products/tornado-smart-tv.jpg',
     images: [
-      '/src/assets/products/tornado-smart-tv.svg'
+      '/products/tornado-smart-tv.jpg',
+      '/products/tornado-smart-tv-back.jpg',
     ],
     shortDescription: 'شاشة سمارت Full HD مع رسيفر داخلي ودعم يوتيوب وشاهد ونتفليكس بضمان العربي.',
     description: 'شاشة تورنيدو سمارت مقاس 43 بوصة بدقة Full HD تمنحك صورة نقية وألوان طبيعية حيوية. مجهزة بنظام تشغيل ذكي يتيح تصفح الإنترنت والاستمتاع بأحدث الأفلام والمسلسلات عبر أشهر التطبيقات العالمية والمحلية، مع رسيفر داخلي يغنيك عن الأجهزة الإضافية.',
@@ -360,9 +361,9 @@ export const products = [
     categoryName: 'الأجهزة الصغيرة',
     price: 54000,
     oldPrice: 59000,
-    image: '/src/assets/products/bosch-coffee-machine.webp',
+    image: '/products/bosch-coffee-machine.webp',
     images: [
-      '/src/assets/products/bosch-coffee-machine.webp'
+      '/products/bosch-coffee-machine.webp'
     ],
     shortDescription: 'ماكينة إسبريسو أوتوماتيكية بالكامل بنظام SensoFlow ومطحنة سيراميك وتحضير لمسة واحدة.',
     description: 'عش تجربة المقهى الإيطالي الفاخر في منزلك مع ماكينة القهوة بوش VeroBarista 600. تتيح لك تحضير قهوتك المفضلة من الإسبريسو المركز إلى الكابتشينو واللاتيه برغوة حليب كريمية غنية بلمسة زر واحدة OneTouch DoubleCup.',
@@ -397,9 +398,9 @@ export const products = [
     categoryName: 'الأجهزة الصغيرة',
     price: 6800,
     oldPrice: 7500,
-    image: '/src/assets/products/beko-microwave.png',
+    image: '/products/beko-microwave.png',
     images: [
-      '/src/assets/products/beko-microwave.png'
+      '/products/beko-microwave.png'
     ],
     shortDescription: 'سعة 20 لتر بقوة 800 واط مع شواية 1000 واط وإذابة سريعة بالوزن والوقت.',
     description: 'ميكروويف بيكو الديجيتال بالشواية يجمع بين سرعة تسخين الميكروويف وقرمشة الشواية الذهبية. مزود بـ 8 برامج طهي تلقائية للبيتزا واللحوم والمشروبات، مع تحكم رقمي دقيق وقفل أمان للأطفال.',

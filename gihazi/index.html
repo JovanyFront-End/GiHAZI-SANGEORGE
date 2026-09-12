@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="/logo/favicon.svg" />
   <title>جهازي | اجهزة منزلية</title>
   <meta name="description"
     content="جهازي (سان جورج) — الوكيل المعتمد لأجهزة بيكو وسامسونج في محافظة السويس. تشكيلة واسعة من الثلاجات، الغسالات، الشاشات، والتكييفات مع ضمان رسمي وتوصيل وتركيب فوري." />
@@ -15,34 +15,6 @@
 
   <div id="site-navbar"></div>
 
-  <!-- Keeps the hero pinned exactly below the navbar (measures the real rendered
-       navbar height instead of guessing a fixed offset), so it stays accurate
-       even if the navbar's height changes across breakpoints or content updates. -->
-  <script>
-    (function () {
-      var navbarWrap = document.getElementById('site-navbar');
-      var hero = document.getElementById('hero-carousel');
-      if (!navbarWrap || !hero) return;
-
-      function syncHeroOffset() {
-        var navEl = navbarWrap.firstElementChild;
-        if (!navEl) { hero.style.marginTop = ''; return; }
-        var pos = window.getComputedStyle(navEl).position;
-        // Only offset when the navbar is taken out of normal flow (fixed/sticky),
-        // which is what causes it to visually overlap the hero image.
-        if (pos === 'fixed' || pos === 'sticky') {
-          hero.style.marginTop = navEl.getBoundingClientRect().height + 'px';
-        } else {
-          hero.style.marginTop = '';
-        }
-      }
-
-      new MutationObserver(syncHeroOffset).observe(navbarWrap, { childList: true, subtree: true });
-      window.addEventListener('load', syncHeroOffset);
-      window.addEventListener('resize', syncHeroOffset);
-      syncHeroOffset();
-    })();
-  </script>
 
 <!-- Hero Carousel Section -->
   <section class="relative bg-slate-900 overflow-hidden group select-none" id="hero-carousel" aria-label="Hero Carousel">
@@ -53,7 +25,7 @@
         <!-- Slide 1: Beko Kitchen Real Background -->
         <div class="w-full shrink-0 h-full relative">
           <img 
-            src="https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1920&auto=format&fit=crop" 
+            src="./src/assets/hero/kitchen.jpg" 
             alt="أجهزة بيكو المطبخية" 
             class="w-full h-full object-cover object-center" 
           />
@@ -70,7 +42,7 @@
         <!-- Slide 2: Samsung Living Room Real Background -->
         <div class="w-full shrink-0 h-full relative">
           <img 
-            src="https://images.unsplash.com/photo-1633604712918-6ab1173d0ecd?q=80&w=1920&auto=format&fit=crop" 
+            src="./src/assets/hero/tv.jpg" 
             alt="شاشات وتكييفات سامسونج" 
             class="w-full h-full object-cover object-center" 
           />
@@ -87,7 +59,7 @@
         <!-- Slide 3: Modern Appliance Showroom Background -->
         <div class="w-full shrink-0 h-full relative">
           <img 
-            src="https://images.pexels.com/photos/32162277/pexels-photo-32162277.jpeg" 
+            src="./src/assets/hero/phone.jpg" 
             alt="معرض الأجهزة بالسويس" 
             class="w-full h-full object-cover object-center" 
           />
@@ -133,78 +105,104 @@
   </section>
 
   <!-- Categories Grid Section -->
-  <section class="py-14 sm:py-18 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section class="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
     <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
       <div>
         <span class="text-xs font-bold text-blue-600 uppercase tracking-wider block mb-1">أقسام الأجهزة</span>
         <h2 class="text-2xl sm:text-3xl font-black text-slate-900">تسوق حسب فئة الجهاز</h2>
       </div>
-      <a href="/products.html" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1">
+      <a href="/products.html" class="text-xs sm:text-sm font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1.5 transition-colors">
         <span>عرض جميع الأقسام</span>
         <span>&larr;</span>
       </a>
     </div>
 
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+    <!-- Mobile-First Simple Large Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
 
-      <!-- Refrigerator -->
+      <!-- Category 1: Refrigerators -->
       <a href="/products.html?category=refrigerators"
-        class="group bg-white rounded-2xl p-4 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-blue-400 transition-all text-center flex flex-col items-center">
-        <div
-          class="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center p-2 mb-3 group-hover:scale-110 transition-transform">
-          <img src="/src/assets/products/beko-refrigerator.png" alt="الثلاجات"
-            class="max-h-full max-w-full object-contain" />
+        class="group bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 hover:border-blue-600 hover:bg-blue-50/20 transition-all duration-200 flex items-center justify-between">
+        <div class="space-y-1">
+          <h3 class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">الثلاجات</h3>
+          <p class="text-xs sm:text-sm text-slate-500">نوفروست وبيسبوك</p>
         </div>
-        <h3 class="text-xs font-bold text-slate-800 group-hover:text-blue-600">الثلاجات</h3>
-        <span class="text-[10px] text-slate-400 mt-0.5">نوفروست وبيسبوك</span>
+        <div class="w-10 h-10 rounded-full bg-slate-100 group-hover:bg-blue-600 group-hover:text-white flex items-center justify-center text-slate-600 transition-all shrink-0">
+          <svg class="w-5 h-5 stroke-current fill-none stroke-2 transform group-hover:-translate-x-1 transition-transform" viewBox="0 0 24 24">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+        </div>
       </a>
 
-      <!-- Washing Machines -->
+      <!-- Category 2: Washing Machines -->
       <a href="/products.html?category=washing-machines"
-        class="group bg-white rounded-2xl p-4 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-blue-400 transition-all text-center flex flex-col items-center">
-        <div
-          class="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center p-2 mb-3 group-hover:scale-110 transition-transform">
-          <img src="/src/assets/products/beko-washing-machine.png" alt="الغسالات"
-            class="max-h-full max-w-full object-contain" />
+        class="group bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 hover:border-blue-600 hover:bg-blue-50/20 transition-all duration-200 flex items-center justify-between">
+        <div class="space-y-1">
+          <h3 class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">الغسالات</h3>
+          <p class="text-xs sm:text-sm text-slate-500">بخار وإيكوبابل</p>
         </div>
-        <h3 class="text-xs font-bold text-slate-800 group-hover:text-blue-600">الغسالات</h3>
-        <span class="text-[10px] text-slate-400 mt-0.5">بخار وإيكوبابل</span>
+        <div class="w-10 h-10 rounded-full bg-slate-100 group-hover:bg-blue-600 group-hover:text-white flex items-center justify-center text-slate-600 transition-all shrink-0">
+          <svg class="w-5 h-5 stroke-current fill-none stroke-2 transform group-hover:-translate-x-1 transition-transform" viewBox="0 0 24 24">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+        </div>
       </a>
 
-      <!-- Kitchen -->
+      <!-- Category 3: Kitchen & Built-in -->
       <a href="/products.html?category=kitchen"
-        class="group bg-white rounded-2xl p-4 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-blue-400 transition-all text-center flex flex-col items-center">
-        <div
-          class="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center p-2 mb-3 group-hover:scale-110 transition-transform">
-          <img src="/src/assets/products/beko-built-in-oven.png" alt="المطبخ والبلت إن"
-            class="max-h-full max-w-full object-contain" />
+        class="group bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 hover:border-blue-600 hover:bg-blue-50/20 transition-all duration-200 flex items-center justify-between">
+        <div class="space-y-1">
+          <h3 class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">المطبخ والبلت إن</h3>
+          <p class="text-xs sm:text-sm text-slate-500">أفران وغسالات أطباق</p>
         </div>
-        <h3 class="text-xs font-bold text-slate-800 group-hover:text-blue-600">المطبخ والبلت إن</h3>
-        <span class="text-[10px] text-slate-400 mt-0.5">أفران وغسالات أطباق</span>
+        <div class="w-10 h-10 rounded-full bg-slate-100 group-hover:bg-blue-600 group-hover:text-white flex items-center justify-center text-slate-600 transition-all shrink-0">
+          <svg class="w-5 h-5 stroke-current fill-none stroke-2 transform group-hover:-translate-x-1 transition-transform" viewBox="0 0 24 24">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+        </div>
       </a>
 
-      <!-- Screens -->
+      <!-- Category 4: Smart Screens -->
       <a href="/products.html?category=screens"
-        class="group bg-white rounded-2xl p-4 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-blue-400 transition-all text-center flex flex-col items-center">
-        <div
-          class="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center p-2 mb-3 group-hover:scale-110 transition-transform">
-          <img src="/src/assets/products/samsung-qled-tv.avif" alt="الشاشات الذكية"
-            class="max-h-full max-w-full object-contain" />
+        class="group bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 hover:border-blue-600 hover:bg-blue-50/20 transition-all duration-200 flex items-center justify-between">
+        <div class="space-y-1">
+          <h3 class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">الشاشات الذكية</h3>
+          <p class="text-xs sm:text-sm text-slate-500">QLED و4K</p>
         </div>
-        <h3 class="text-xs font-bold text-slate-800 group-hover:text-blue-600">الشاشات الذكية</h3>
-        <span class="text-[10px] text-slate-400 mt-0.5">QLED و4K</span>
+        <div class="w-10 h-10 rounded-full bg-slate-100 group-hover:bg-blue-600 group-hover:text-white flex items-center justify-center text-slate-600 transition-all shrink-0">
+          <svg class="w-5 h-5 stroke-current fill-none stroke-2 transform group-hover:-translate-x-1 transition-transform" viewBox="0 0 24 24">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+        </div>
       </a>
 
-      <!-- Small Appliances -->
-      <a href="/products.html?category=small-appliances"
-        class="group bg-white rounded-2xl p-4 border border-slate-200/80 shadow-xs hover:shadow-md hover:border-blue-400 transition-all text-center flex flex-col items-center">
-        <div
-          class="w-16 h-16 rounded-2xl bg-blue-50 flex items-center justify-center p-2 mb-3 group-hover:scale-110 transition-transform">
-          <img src="/src/assets/products/bosch-coffee-machine.webp" alt="الأجهزة الصغيرة"
-            class="max-h-full max-w-full object-contain" />
+      <!-- Category 5: Air Conditioners -->
+      <a href="/products.html?category=air-conditioners"
+        class="group bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 hover:border-blue-600 hover:bg-blue-50/20 transition-all duration-200 flex items-center justify-between">
+        <div class="space-y-1">
+          <h3 class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">التكييفات</h3>
+          <p class="text-xs sm:text-sm text-slate-500">إنفرتر وتبريد سريع</p>
         </div>
-        <h3 class="text-xs font-bold text-slate-800 group-hover:text-blue-600">الأجهزة الصغيرة</h3>
-        <span class="text-[10px] text-slate-400 mt-0.5">ماكينات قهوة وميكروويف</span>
+        <div class="w-10 h-10 rounded-full bg-slate-100 group-hover:bg-blue-600 group-hover:text-white flex items-center justify-center text-slate-600 transition-all shrink-0">
+          <svg class="w-5 h-5 stroke-current fill-none stroke-2 transform group-hover:-translate-x-1 transition-transform" viewBox="0 0 24 24">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+        </div>
+      </a>
+
+      <!-- Category 6: Small Appliances -->
+      <a href="/products.html?category=small-appliances"
+        class="group bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 hover:border-blue-600 hover:bg-blue-50/20 transition-all duration-200 flex items-center justify-between">
+        <div class="space-y-1">
+          <h3 class="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">الأجهزة الصغيرة</h3>
+          <p class="text-xs sm:text-sm text-slate-500">ماكينات قهوة وميكروويف</p>
+        </div>
+        <div class="w-10 h-10 rounded-full bg-slate-100 group-hover:bg-blue-600 group-hover:text-white flex items-center justify-center text-slate-600 transition-all shrink-0">
+          <svg class="w-5 h-5 stroke-current fill-none stroke-2 transform group-hover:-translate-x-1 transition-transform" viewBox="0 0 24 24">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+        </div>
       </a>
 
     </div>

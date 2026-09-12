@@ -41,7 +41,7 @@ function buildFooter() {
         <!-- Brand Information -->
         <div class="space-y-5">
           <a href="/" aria-label="جهازي — الرئيسية" class="inline-block">
-            <img src="/logo.png" alt="جهازي" class="h-12 w-auto brightness-0 invert" />
+            <img src="/logo/logo.png" alt="جهازي" class="h-12 w-auto brightness-0 invert" />
           </a>
           <p class="leading-relaxed text-slate-300 text-sm">
             جهازي (شركة سان جورج للأجهزة المنزلية) — الوكيل المعتمد لبيكو وسامسونج في السويس. أجهزة أصلية بضمان كامل مع خدمات التوصيل والتركيب المعتمدة.

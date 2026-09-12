@@ -79,7 +79,7 @@ function buildHeader() {
 
         <!-- Right: Brand Logo -->
         <a href="/" class="shrink-0 flex items-center" aria-label="جهازي — الصفحة الرئيسية">
-          <img src="/logo.png" alt="جهازي - الوكيل المعتمد لبيكو وسامسونج في السويس" class="h-10 sm:h-14 w-auto object-contain" />
+          <img src="/logo/logo.png" alt="جهازي - الوكيل المعتمد لبيكو وسامسونج في السويس" class="h-10 sm:h-14 w-auto object-contain" />
         </a>
 
         <!-- Center: Desktop Navigation Links -->
@@ -185,7 +185,7 @@ function buildDrawer() {
 
     <!-- Drawer Header -->
     <div class="p-5 border-b border-slate-100 flex items-center justify-between">
-      <img src="/logo.png" alt="جهازي" class="h-10 w-auto object-contain" />
+      <img src="/logo/logo.png" alt="جهازي" class="h-10 w-auto object-contain" />
       <button id="mobile-menu-close" type="button" class="w-9 h-9 rounded-xl bg-slate-100 text-black hover:bg-black hover:text-white flex items-center justify-center font-bold text-xl transition-colors" aria-label="إغلاق القائمة">&times;</button>
     </div>
 
